@@ -54,6 +54,9 @@ def go(config: DictConfig):
             ##################
             # Implement here #
             ##################
+
+            print("basic_cleaning_path: ", os.path.join(root_path, "src", "basic_cleaning"))
+
             _ = mlflow.run(
                 os.path.join(root_path, "src", "basic_cleaning"),
                 "main",
